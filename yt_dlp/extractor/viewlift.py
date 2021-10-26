@@ -14,11 +14,10 @@ from ..utils import (
 
 class ViewLiftBaseIE(InfoExtractor):
     _API_BASE = 'https://prod-api.viewlift.com/'
-    _DOMAINS_REGEX = r'(?:(?:main\.)?snagfilms|snagxtreme|funnyforfree|kiddovid|winnersview|(?:monumental|lax)sportsnetwork|vayafilm|failarmy|ftfnext|lnppass\.legapallacanestro|moviespree|app\.myoutdoortv|neoufitness|pflmma|theidentitytb)\.com|(?:hoichoi|app\.horseandcountry|kronon|marquee|supercrosslive)\.tv'
+    _DOMAINS_REGEX = r'(?:(?:main\.)?snagfilms|snagxtreme|funnyforfree|kiddovid|winnersview|(?:monumental|lax)sportsnetwork|vayafilm|failarmy|ftfnext|lnppass\.legapallacanestro|moviespree|app\.myoutdoortv|neoufitness|pflmma|theidentitytb)\.com|(?:app\.horseandcountry|kronon|marquee|supercrosslive)\.tv'
     _SITE_MAP = {
         'ftfnext': 'lax',
         'funnyforfree': 'snagfilms',
-        'hoichoi': 'hoichoitv',
         'kiddovid': 'snagfilms',
         'laxsportsnetwork': 'lax',
         'legapallacanestro': 'lnp',
